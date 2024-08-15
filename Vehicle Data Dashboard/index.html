@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Data Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Vehicle Data Dashboard</h1>
+    </header>
+    <main class="container">
+        <div class="card" id="makes-card">
+            <h2>Vehicle Makes</h2>
+             <p class="label">Number of Makes:</p>
+            <p id="makes-count" class="count">Loading...</p>
+            <button class="view-button" onclick="viewDetails('makes')">View</button>
+        </div>
+        <div class="card" id="models-card">
+            <h2>Vehicle Models</h2>
+            <p class="label">Number of Models:</p>
+            <p id="models-count" class="count">Loading...</p>
+            <button class="view-button" onclick="viewDetails('models')">View</button>
+        </div>
+        <div class="card" id="variants-card">
+            <h2>Vehicle Variants</h2>
+            <p class="label">Number of Variants:</p>
+            <p id="variants-count" class="count">Loading...</p>
+            <button class="view-button" onclick="viewDetails('variants')">View</button>
+        </div>
+    </main>
+    <footer>
+        <p>Data provided by <a href="https://whitebook-engine.kuala.io" target="_blank">Whitebook Engine</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
